@@ -1,0 +1,24 @@
+<h1>{{ section.settings.title }}</h1>
+<p>{{ section.settings.subtext_title }}</p>
+
+{% schema %}
+{
+  "name": "Template 404",
+  "tag": "section",
+  "class": "flex items-center justify-center text-center py-7 h-screen",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "404",
+      "default": "404 heading title"
+    },
+    {
+      "type": "text",
+      "id": "subtext_title",
+      "label": "Subtext title",
+      "default": "Sorry, the page you are looking for cannot be found."
+    }
+  ]
+}
+{% endschema %}
